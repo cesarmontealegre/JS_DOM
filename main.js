@@ -63,18 +63,20 @@ document.getElementById('trianguloForm').addEventListener('submit', function(e) 
 });
 
 // Ejercicio 4 - Comprobación de nombres y actividades
-document.getElementById('instructorForm').addEventListener('submit', function(e) {
+document.getElementById('nombresForm').addEventListener('submit', function(e) {
   e.preventDefault();
+
   var nombre = document.getElementById('nombreSelect').value;
   var apellido = document.getElementById('apellidoSelect').value;
   var actividad = document.getElementById('actividadSelect').value;
-  
+
   if (nombre === 'Juan' && apellido === 'Pérez' && actividad === 'Programación') {
     alert('La respuesta es correcta');
   } else {
     alert('La respuesta es incorrecta');
   }
 });
+
 
 // Ejercicio 5 - Cálculo del área y perímetro de figuras geométricas
 document.getElementById('figuraForm').addEventListener('submit', function(e) {
