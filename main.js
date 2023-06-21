@@ -18,11 +18,12 @@ document.getElementById('stringForm').addEventListener('submit', function(e) {
 // Ejercicio 2 - Conversión de temperatura
 document.getElementById('temperaturaForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  var temperatura = parseFloat(document.getElementById('temperaturaInput').value);
-  var convertirDe = document.getElementById('convertirDeSelect').value;
-  var convertirA = document.getElementById('convertirASelect').value;
-  var resultado;
   
+  var temperatura = parseFloat(document.getElementById('temperaturaInput').value);
+  var convertirDe = document.getElementById('unidadDeSelect').value;
+  var convertirA = document.getElementById('unidadASelect').value;
+  var resultado;
+
   if (convertirDe === 'celsius' && convertirA === 'fahrenheit') {
     resultado = (temperatura * 9/5) + 32;
     alert('La temperatura convertida es: ' + resultado.toFixed(2) + ' °F');
@@ -43,6 +44,7 @@ document.getElementById('temperaturaForm').addEventListener('submit', function(e
     alert('La temperatura convertida es: ' + resultado.toFixed(2) + ' °F');
   }
 });
+
 
 // Ejercicio 3 - Tipo de triángulo
 document.getElementById('trianguloForm').addEventListener('submit', function(e) {
