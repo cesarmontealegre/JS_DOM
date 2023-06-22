@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Aplicación</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Mis Ejercicios</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio1">Strings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio2">Temperaturas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio3">Determinar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio4">Profesores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio5">Cálculos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio6">Formulario</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container mt-5">
+    <!-- Ejercicio 1: Manipulación de Strings -->
+    <div class="card my-4" id="ejercicio1">
+      <div class="card-header">
+        Ejercicio 1: Manipulación de Strings
+      </div>
+      <div class="card-body">
+        <form id="stringForm">
+          <div class="form-group">
+            <label for="palabraInput">Ingrese una palabra:</label>
+            <input type="text" class="form-control" id="palabraInput" required>
+          </div>
+          <div class="form-group">
+            <label for="opcionSelect">Seleccione una opción:</label>
+            <select class="form-control" id="opcionSelect">
+              <option value="longitud">Longitud de la palabra</option>
+              <option value="mayusculas">Convertir a mayúsculas</option>
+              <option value="minusculas">Convertir a minúsculas</option>
+              <option value="primerCaracter">Primer carácter</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Realizar operación</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Ejercicio 2: Conversión de temperaturas -->
+    <div class="card my-4" id="ejercicio2">
+      <div class="card-header">
+        Ejercicio 2: Conversión de temperaturas
+      </div>
+      <div class="card-body">
+        <form id="temperaturaForm">
+          <div class="form-group">
+            <label for="temperaturaInput">Ingrese una temperatura en grados:</label>
+            <input type="number" class="form-control" id="temperaturaInput" required>
+          </div>
+          <div class="form-group">
+            <label for="unidadDeSelect">Vas a convertir de:</label>
+            <select class="form-control" id="unidadDeSelect">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="celsius">Celsius</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="unidadASelect">Deseas convertir a:</label>
+            <select class="form-control" id="unidadASelect">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="celsius">Celsius</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Realizar conversión</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Ejercicio 3: Determinar tipo de triángulo -->
+    <div class="card my-4"  id="ejercicio3">
+      <div class="card-header">
+        Ejercicio 3: Determinar tipo de triángulo
+      </div>
+      <div class="card-body">
+        <form id="trianguloForm">
+          <div class="form-group">
+            <label for="lado1Input">Lado 1:</label>
+            <input type="number" class="form-control" id="lado1Input" required>
+          </div>
+          <div class="form-group">
+            <label for="lado2Input">Lado 2:</label>
+            <input type="number" class="form-control" id="lado2Input" required>
+          </div>
+          <div class="form-group">
+            <label for="lado3Input">Lado 3:</label>
+            <input type="number" class="form-control" id="lado3Input" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Determinar tipo de triángulo</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Ejercicio 4: Comprobación de nombres y actividades -->
+    <div class="card my-4"  id="ejercicio4">
+      <div class="card-header">
+        Ejercicio 4: Comprobación de nombres y actividades
+      </div>
+      <div class="card-body">
+        <form id="nombresForm">
+          <div class="form-group">
+            <label for="nombreSelect">Nombre:</label>
+            <select class="form-control" id="nombreSelect">
+              <option value="Juan">Juan</option>
+              <option value="María">María</option>
+              <option value="Pedro">Pedro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="apellidoSelect">Apellido:</label>
+            <select class="form-control" id="apellidoSelect">
+              <option value="Pérez">Pérez</option>
+              <option value="Gómez">Gómez</option>
+              <option value="López">López</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="actividadSelect">Actividad:</label>
+            <select class="form-control" id="actividadSelect">
+              <option value="Programación">Programación</option>
+              <option value="Diseño">Diseño</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Comprobar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card my-4" id="ejercicio5">
+      <div class="card-header">
+        Ejercicio 5: Cálculo de áreas y perímetros
+      </div>
+      <div class="card-body">
+        <form id="figuraForm">
+          <div class="form-group">
+            <label for="figuraSelect">Selecciona una figura:</label>
+            <select class="form-control" id="figuraSelect">
+              <option value="cuadrado">Cuadrado</option>
+              <option value="rectangulo">Rectángulo</option>
+              <option value="circulo">Círculo</option>
+            </select>
+          </div>
+          <div class="form-group" id="ladoFormGroup">
+            <label for="ladoInput">Ingresa el valor del lado:</label>
+            <input type="number" class="form-control" id="ladoInput">
+          </div>
+          <div class="form-group" id="baseFormGroup">
+            <label for="baseInput">Ingresa el valor de la base:</label>
+            <input type="number" class="form-control" id="baseInput">
+          </div>
+          <div class="form-group" id="alturaFormGroup">
+            <label for="alturaInput">Ingresa el valor de la altura:</label>
+            <input type="number" class="form-control" id="alturaInput">
+          </div>
+          <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+      </div>
+    </div>
+    
+
+    <!-- Ejercicio 6: Formulario de registro de usuario -->
+    <div class="card my-4"  id="ejercicio6">
+      <div class="card-header">
+        Ejercicio 6: Formulario de registro de usuario
+      </div>
+      <div class="card-body">
+        <form id="registroForm">
+          <div class="form-group">
+            <label for="tipoDocumentoSelect">Tipo de documento:</label>
+            <select class="form-control" id="tipoDocumentoSelect" required>
+              <option value="cedula">Cédula</option>
+              <option value="tarjetaIdentidad">Tarjeta de Identidad</option>
+              <option value="pasaporte">Pasaporte</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="numeroDocumentoInput">No. Documento:</label>
+            <input type="text" class="form-control" id="numeroDocumentoInput" required pattern="[0-9]{5,}">
+          </div>
+          <div class="form-group">
+            <label for="nombreInput">Nombre:</label>
+            <input type="text" class="form-control" id="nombreInput" required>
+          </div>
+          <div class="form-group">
+            <label for="apellidoInput">Apellido:</label>
+            <input type="text" class="form-control" id="apellidoInput" required>
+          </div>
+          <div class="form-group">
+            <label for="fechaNacimientoInput">Fecha de Nacimiento:</label>
+            <input type="date" class="form-control" id="fechaNacimientoInput" required>
+          </div>
+          <div class="form-group">
+            <label for="correoInput">Correo electrónico:</label>
+            <input type="email" class="form-control" id="correoInput" required pattern="[a-z0-9._%+-]+@misena.edu.co">
+          </div>
+          <div class="form-group">
+            <label for="passwordInput">Password:</label>
+            <input type="password" class="form-control" id="passwordInput" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número">
+          </div>
+          <div class="form-group">
+            <label for="confirmarPasswordInput">Confirmar Password:</label>
+            <input type="password" class="form-control" id="confirmarPasswordInput" required>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="terminosCheck" required>
+              <label class="form-check-label" for="terminosCheck">
+                Acepto los términos y condiciones
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal para cálculo del perímetro y área del círculo -->
+  <div class="modal fade" id="circuloModal" tabindex="-1" role="dialog" aria-labelledby="circuloModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="circuloModalLabel">Círculo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="circuloResultadoPerimetro"></div>
+          <div id="circuloResultadoArea"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para cálculo del perímetro y área del triángulo -->
+  <div class="modal fade" id="trianguloModal" tabindex="-1" role="dialog" aria-labelledby="trianguloModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trianguloModalLabel">Triángulo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="trianguloResultadoPerimetro"></div>
+          <div id="trianguloResultadoArea"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para cálculo del perímetro y área del rectángulo -->
+  <div class="modal fade" id="rectanguloModal" tabindex="-1" role="dialog" aria-labelledby="rectanguloModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rectanguloModalLabel">Rectángulo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="rectanguloResultadoPerimetro"></div>
+          <div id="rectanguloResultadoArea"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para cálculo del perímetro y área del cuadrado -->
+  <div class="modal fade" id="cuadradoModal" tabindex="-1" role="dialog" aria-labelledby="cuadradoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuadradoModalLabel">Cuadrado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="cuadradoResultadoPerimetro"></div>
+          <div id="cuadradoResultadoArea"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
